@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="fav.png" href="fav.png">
+    <title>Party Time</title>
+</head>
+
+<body>
+    <!--The Header Logo + Navigation Bar-->
+    <header>
+        <h1 class="logo">
+            <a href="#">Party Time</a>
+        </h1>
+        <nav class="navbar">
+            <a href="#tran">Service</a>
+            <a href="#pek">Package</a>
+            <a href="#tran">About us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="galleryslide">
+        <div class="image-container">
+
+            <div class="slide show">
+                <img src="table.jpg" alt="Slide 1">
+                <div class="overlay"></div>
+            </div>
+            <div class="slide">
+                <img src="firework.jpg" alt="Slide 2">
+                <div class="overlay"></div>
+            </div>
+            <div class="slide">
+                <img src="party.jpg" alt="Slide 3">
+                <div class="overlay"></div>
+            </div>
+            <div class="slide">
+                <img src="ppl.jpg" alt="Slide 4">
+                <div class="overlay"></div>
+            </div>
+
+
+        </div>
+
+        <script>
+            let slideIndex = 0;
+            function showSlides() {
+                let i;
+                const slides = document.getElementsByClassName("slide");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {
+                    slideIndex = 1;
+                }
+                slides[slideIndex - 1].style.display = "block";
+                setTimeout(showSlides, 5000); // Change slide every 10 seconds
+            }
+            document.addEventListener("DOMContentLoaded", showSlides);
+        </script>
+
+        <div class="intro">
+            <h3>Party Time</h3>
+            <p>Welcome to Party Time your go-to hub for stress-free event planning!<br />Navigate effortlessly through
+                our revamped website featuring vibrant visuals, organized sections, and user-friendly design.<br />
+                Explore our services with captivating images and consider our convenient packages for an unforgettable
+                experience.<br />Need assistance or have questions? Connect with us directly through the "Contact Us"
+                section.<br /> Your feedback matters, and we're here to make your event planning journey seamless and
+                enjoyable. <br />Let's create memories together!
+            </p>
+            <h1 class="bookbutton" style="vertical-align: middle"><span><a href="contact.html">Contact Us</a></span></h1>
+        </div>
+    </section>
+
+
+    <!-- Services and Products Section -->
+    <section class="gallery">
+
+        <h3 id="tran">SERVICES AND PRODUCTS</h3><br /><br /><br />
+
+        <div class="image-container1">
+            <div class="bottom-text">
+                <img src="entertainment.jpg" alt="entertainment">
+                <div class="text-overlay">Entertainment</div>
+            </div>
+            <div class="bottom-text">
+                <img src="themedevent.jpg" alt="themedevent">
+                <div class="text-overlay">Themed Event</div>
+            </div>
+
+            <div class="bottom-text">
+                <img src="lastimage.png" alt="specialcelebration">
+                <div class="text-overlay">Special Celebrations</div>
+            </div>
+            <div class="bottom-text">
+                <img src="fundraisers.jpg" alt="fundraisers">
+                <div class="text-overlay">Fundraisers</div>
+            </div>
+            <div class="bottom-text">
+                <img src="bespokecatering.jpg" alt="bespokecatering">
+                <div class="text-overlay">Bespoke Catering</div>
+            </div>
+            <div class="bottom-text">
+                <img src="themes&props.jpg" alt="themes&props">
+                <div class="text-overlay">Themes & Props</div>
+            </div>
+            <div class="bottom-text">
+                <img src="Invitations&Paintwork.jpg" alt="Invitations&Paintwork">
+                <div class="text-overlay">Invitations & Paintwork</div>
+            </div>
+            <div class="bottom-text">
+                <img src="sound&lighting.jpg" alt="sound&lighting">
+                <div class="text-overlay">Sound & Lighting</div>
+            </div>
+        </div>
+    </section>
+
+    <!--Packages Section-->
+    <div class="bottom-text1">
+        <h1 class="packages-sec">OUR PACKAGES</p>
+     <!--Bronze-->
+    <div class="allthesection">
+
+        <div class="glow"></div>
+        <div class="rec"></div>
+        <div class="lin"></div>
+        <div class="rec1">
+
+            <h2>BRONZE</h2>
+            <h1 class="bookbutton1"><a href="contact.html">CONTACT US</a></h1>
+        </div>
+
+        <div class="square">
+            <h3>$150</h3>
+            <p>
+                • Room decorations balloons, banners<br />
+                <br />
+                • Table decorations centrepieces, gifts<br />
+                <br />
+                • DJ entertainment<br />
+                <br />
+                • Cold buffet
+            </p>
+        </div>
+    </div>
+    <!--Gold-->
+    <div class="gold"></div>
+
+    <div class="gold1">
+        <h2>GOLD</h2>
+        <h1 class="bookbutton2"><a href="contact.html">CONTACT US</a></h1>
+    </div>
+
+    <div class="squaregold">
+        <h3>$350</h3>
+        <p>
+            • Staff in attendance to ensure complete perfection<br />
+            <br />
+            • Finding guest accommodation, booking transport<br />
+            <br />
+            • Live band entertainment and magician<br />
+            <br />
+            • Hot and Cold buffet and soft drinks.
+        </p>
+    </div>
+
+    <!--Silver-->
+    <div class="silver"></div>
+
+    <div class="silver1">
+        <h2>SILVER</h2>
+        <h1 class="bookbutton3"><a href="contact.html">CONTACT US</a></h1>
+    </div>
+
+    <div class="squaresilver">
+        <h3>$250</h3>
+        <p>
+            • Invitation design and handling<br />
+            <br />
+            • Party cost clear up<br />
+            <br />
+            • Live band entertainment<br />
+            <br />
+            • Cold buffet and soft drinks
+        </p>
+    </div>
+
+    <!--Custom Package-->
+    <div class="custom"></div>
+
+    <div class="custom1">
+        <h2>CUSTOM PACKAGE</h2>
+        <h1 class="bookbutton4"><a href="contact.html">CONTACT US</a></h1>
+    </div> 
+
+    <div class="squarecustom">
+        <p>
+            Custom packages are available for specific parties, additional
+            decorations and additional staff. Clients must contact the company to
+            arrange any custom packages.<br />
+            <br /> We offer custom packages for different events with extra decorations and staff.
+            To arrange a personalized package, just reach out to us. We're here to make your event exactly how you want
+            it.
+            Contact us to discuss your ideas and let's make your celebration unique!<br />
+            <br />Just get in touch with us, and we'll help you create the perfect package for your occasion. Your event
+            is unique, and we're here to make sure it's exactly how you want it. Contact us to discuss your ideas and
+            let's make your celebration even more memorable together!
+        </p>
+    </div>
+
+
+    </div>
+    </div>
+
+    </div><!--ALL-->
+    </section>
+
+
+
+    <!--Contact Section-->
+
+
+    <footer>
+        <div class="bottom-text5">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="#tran">Services</a>
+                    <a href="#pek">Packages</a>
+                    <a href="#contact.html">About Us</a>
+                    <a href="#contact.html">Contact</a>
+                </div>
+                <div class="icon">
+                    <a href="/contact.html"><img src="facebook.png"></a>
+                    <a href="#contact.html"><img src="twitter.png"></a>
+                    <a href="#contact.html"><img src="instagram.png"></a>
+                    <a href="#contact.html"><img src="youtube.png"></a>
+                    <a href="#contact.html"><img src="tiktok.png"></a>
+                    <a href="#contact.html"><img src="linkedin.png"></a>
+                    <a href="#contact.html"><img src="pinterest.png"></a>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                Copyright &copy; NV22150
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
